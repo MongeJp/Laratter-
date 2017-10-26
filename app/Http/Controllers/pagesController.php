@@ -23,6 +23,11 @@ class pagesController extends Controller
                 'content' => 'Este es mi tercer mensaje',
                 'image' => 'https://lorempixel.com/600/338?3',
             ],
+            [
+                'id' => 4,
+                'content' => 'Este es mi cuarto mensaje',
+                'image' => 'https://lorempixel.com/600/338?4',
+            ]
         ];
         return view('welcome', ['messages' => $messages]);
     }
