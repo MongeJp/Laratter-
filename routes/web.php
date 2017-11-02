@@ -14,3 +14,5 @@
 Route::get('/', 'pagesController@Home');
 // Route::get('messages/{{message}}', 'MessagesController@show');
 Route::get('/messages/{message}', 'MessagesController@show');
+
+Route::post('/messages/create', 'MessagesController@create');

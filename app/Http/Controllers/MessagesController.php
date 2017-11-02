@@ -13,4 +13,9 @@ class MessagesController extends Controller
       'message' => $message,
     ]);
   }
+
+  public function create(Request $request){
+      dd($request->all());
+      return 'created!';
+  }
 }
