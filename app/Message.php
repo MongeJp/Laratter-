@@ -10,4 +10,8 @@ class Message extends Model
      * $guarded variable protegida que contiene los campos que protegeremos
      * Suele lanzar el error de MassAsignmentException*/
     protected $guarded = [];
+
+    public function user (){
+        return $this->belongsTo(User::class);
+    }
 }
